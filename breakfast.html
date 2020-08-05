@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <title>Bottega Diner and Cafe</title>
 </head>
 
-<script>
-    
-</script>
+
 
 <style>
 
@@ -17,7 +15,7 @@
 .main_wrapper {
         font-family: 'Montserrat', sans-serif;
         color: black;
-        background-color: lightgrey;
+        background-color: #ECECEC;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -26,7 +24,7 @@
 .links_wrapper {
         font-family: 'Montserrat', sans-serif;
         color: teal;
-        background-color: lightgrey;
+        background-color: #ECECEC;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,16 +37,35 @@
 
 #breakfast_one {
         font-family: 'Montserrat', sans-serif;
-        color: black;
+        color: #00cd79;
         font-weight: 800;
-        background-color: lightgrey;
+        background-color: #ECECEC;
         display: flex;
         align-items: center;
         justify-content: center;
 }
+.submit-btn {
+    background-color: #ECECEC;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+        padding: 20px;
+        margin: 20px;
+        
+        font-family: 'Montserrat', sans-serif;
+        color: #00cb79;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
 
 .background-image {
-    background-color: lightgrey;
+    background-color: #ECECEC;
     height: 100%;
     width: 100%
 }
@@ -73,28 +90,62 @@
         <input type="button" onclick="location.href='breakfast.html';" value="Breakfast" />
         <input type="button" onclick="location.href='lunch.html';" value="Lunch" />
         <input type="button" onclick="location.href='dinner.html';" value="Dinner" />
-        <input type="button" onclick="location.href='sides.html';" value="Sides" />
+       
         <input type="button" onclick="location.href='index.html';" value="Home" />
+        <input type="button" onclick="location.href='cart.html';" value="Cart" />
         </p>
     </div>
 <div id="breakfast_one">
 
     <ul>
-        <ls>Pancake Stacker</ls><br>
-        <ls>Waffles</ls><br>
-        <ls>Breakfast Burrito</ls><br>
-        <ls>Fruit Crepe</ls><br>
-        <ls>Bacon and Sausage Plate</ls><br>
+        <ls>Pancake Stacker <input type="checkbox" onclick="checked"></ls>
+            <script>
+                var x = document.createElement("INPUT");
+            </script>
+        <br>
+        <ls>Waffles <input type="checkbox" onclick="checked"></ls>
+        <script>
+            var x = document.createElement("INPUT");
+        </script>      
+    </ls><br>
+        <ls>Breakfast Burrito <input type="checkbox" onclick="checked"></ls>
+            <script>
+                var x = document.createElement("INPUT");
+            </script>       
+        </ls><br>
+        <ls>Fruit Crepe <input type="checkbox" onclick="checked"></ls>
+            <script>
+                var x = document.createElement("INPUT");
+            </script>       
+        </ls> <br>
+        <ls>Bacon and Sausage Plate <input type="checkbox" onclick="checked"></ls>
+            <script>
+                var x = document.createElement("INPUT");
+            </script>        
+        </ls><br>
         </ul>
 
+   
 </div>
+
+<div class="submit-btn">    
+    <button onclick= "sidesFunction()">Submit</button>
+</div>
+
+
 
 <div class = background-image>
     <img src="white_devcamp_logo.png" height="100%" width="100%";>
+    <div class = "askJarvis">
+        <img src="waiter-512.png" height=70px width=70px <button onclick="getElementById(messageForm);"></button></img>
+        
+    </div>
+
+</div>
 </div>
 
 <script>
-    const dinerArray = [
+const dinerArray = [
 'Hamburger',
 'Cheeseburger',
 'Hot dog',
@@ -103,7 +154,15 @@
 ];
     var menuSelection = document.getElementById(breakfast_one).innerHTML = 'Welcome';
     const order = dinerArray;
-    
+
+
+    function sidesFunction(); {
+        sidePrompt = prompt("Thank you");
+
+}
+</script> 
+
+
 
 
 </body>
