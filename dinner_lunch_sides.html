@@ -13,7 +13,6 @@
 
 <style>
 
-    
 .main_wrapper {
         font-family: 'Montserrat', sans-serif;
         color: black;
@@ -25,7 +24,7 @@
 
 .links_wrapper {
         font-family: 'Montserrat', sans-serif;
-        color: black;
+        color: teal;
         background-color: #ECECEC;
         display: flex;
         align-items: center;
@@ -39,32 +38,12 @@
 
 #menu_selection {
         font-family: 'Montserrat', sans-serif;
-        color: #00cb79;
+        color: #00cd79;;
         font-weight: 800;
         background-color: #ECECEC;
         display: flex;
         align-items: center;
         justify-content: center;
-}
-
-.submit-btn {
-    background-color: #ECECEC;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer {
-        padding: 20px;
-        margin: 20px;
-        
-        font-family: 'Montserrat', sans-serif;
-        color: #00cb79;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
 }
 
 .background-image {
@@ -93,58 +72,63 @@
         <input type="button" onclick="location.href='breakfast.html';" value="Breakfast" />
         <input type="button" onclick="location.href='lunch.html';" value="Lunch" />
         <input type="button" onclick="location.href='dinner.html';" value="Dinner" />
-        
+        <input type="button" onclick="location.href='sides.html';" value="Sides" />
         <input type="button" onclick="location.href='index.html';" value="Home" />
         <input type="button" onclick="location.href='cart.html';" value="Cart" />
+        
 
         </p>
     </div>
 
-</div>
-
-
-
-
     <div id = "menu_selection">
         <ul>
-            <ls>Hamburger <input type="checkbox" onclick="checked"></ls>
-                <script>
-                    var x = document.createElement("INPUT");
-                </script>
+            <ls>French Fries
+                <input type="checkbox" onclick="checked"></ls>
+                    <script>
+                        var x = document.createElement("INPUT");
+                    </script>    
+        
+            </ls><br>
+            <ls>Onion Rings
+                <input type="checkbox" onclick="checked"></ls>
+                    <script>
+                var x = document.createElement("INPUT");
+                    </script>            
+            </ls><br>
+            <ls>Soup
+                <input type="checkbox" onclick="checked"></ls>
+                    <script>
+                        var x = document.createElement("INPUT");
+                    </script>    
                 
             </ls><br>
-            <ls>Cheeseburger <input type="checkbox" onclick="checked"></ls>
-                <script>
-                    var x = document.createElement("INPUT");
-                 </script>    
+            <ls>Salad
+                <input type="checkbox" onclick="checked"></ls>
+                    <script>
+                        var x = document.createElement("INPUT");
+                    </script>    
+                
             </ls><br>
-            <ls>Hot Dog <input type="checkbox" onclick="checked"></ls>
-                <script>
-                    var x = document.createElement("INPUT");
-                </script>        
-            </ls><br>
-            <ls>The Works Sandwich <input type="checkbox" onclick="checked"></ls>
-                <script>
-                    var x = document.createElement("INPUT");
-                </script>    
-            </ls><br>
-            <ls>Pizza <input type="checkbox" onclick="checked"></ls>
-                <script>
-                    var x = document.createElement("INPUT");
-                </script>        
+            <ls>Breadsticks
+                <input type="checkbox" onclick="checked"></ls>
+                    <script>
+                        var x = document.createElement("INPUT");
+                    </script>    
             </ls><br>
             </ul>
 
     </div>
 
+
     <div class="submit-btn">    
-        <button onclick= "location.href='dinner_lunch_sides.html';">Next for Sides</button>
-        <script>
-                var buttons = document.getElementByClass("button");
-                buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
-            </script>
+        <button onclick= "location.href='cart.html';">Continue</button>
+    <script>
+            var buttons = document.getElementByClass("button");
+            buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
+        </script>
     </div>
 
+    
     <div class = background-image>
         <img src="white_devcamp_logo.png" height="500px" width="100%";>
 
@@ -161,33 +145,37 @@
                 info@bottegadiner.com
             </div>
 
-        <div class = "askJarvis">
-            <button id="button" onclick="location.href='contact_form.html';"></button>
+            <div class = "askJarvis">
+                <button id="button" onclick="location.href='contact_form.html';"></button>
 
                 <script type="text/javascript">
                     var buttons = document.getElementById("button");
                     buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
                 </script>
             
-            
-        </div>
-    
-</div>
+                
+            </div>
     </div>
-    
+
     <script>
         const dinerArray = [
-    'Hamburger',
-    'Cheeseburger',
-    'Hot dog',
-    'Grilled Cheese',
-    'Tacos'
+        'Hamburger',
+        'Cheeseburger',
+        'Hot dog',
+        'Grilled Cheese',
+        'Tacos'
 ];
         var menuSelection = document.getElementById(menu_selection).innerHTML = 'Welcome';
         const order = dinerArray;
-    </script>    
         
+    </script>    
+   
 
-    
+
 </body>
+
+<script>
+    var sideMessage = alert('Great choice! Your entree comes with two sides. Please select your sides from the menu below:');
+
+</script>
 </html>

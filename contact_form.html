@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>D</title>
+</head>
+<body>
+
+    <div class="main_wrapper">
+        
+        <h1>Thank you for choosing the Bottega Diner and Cafe!</h1><br>
+    </div>
+
+    <div class="links_wrapper">
+        <p>
+        
+        <input type="button" onclick="location.href='breakfast.html';" value="Breakfast" />
+        <input type="button" onclick="location.href='lunch.html';" value="Lunch" />
+        <input type="button" onclick="location.href='dinner.html';" value="Dinner" />
+        
+        <input type="button" onclick="location.href='index.html';" value="Home" />
+        <input type="button" onclick="location.href='cart.html';" value="Cart" />
+
+        </p>
+    </div>
+
+</div>
+
+<div class = background-image>
+    <img src="white_devcamp_logo.png" height="500px" width="100%";>
+
+    <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+        <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br><br>
+        <input type="button" onclick="myFunction()" value="Submit">
+        </form>
+
+    <div class="footer">
+        <div class="address">
+            123 W 200 N, SLC
+        </div>
+
+        <div class="phoneNumber">
+            555-555-5555
+        </div>
+
+        <div class="email">
+            info@bottegadiner.com
+        </div>
+
+        <div class = "askJarvis">
+            <button id="button" onclick="location.href='contact_form.html';"></button>
+
+                <script type="text/javascript">
+                    var buttons = document.getElementById("button");
+                    buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
+                </script>
+            
+
+        
+            
+        </div>
+    
+</div>
+</div>
+
+    
+
+<script>
+function myFunction() {
+  document.getElementById("frm1").submit();
+}
+</script>
+</body>
+</html>

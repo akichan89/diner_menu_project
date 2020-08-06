@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <title>Bottega Diner and Cafe</title>
 </head>
@@ -142,56 +143,40 @@
                     </script>    
             </ls><br>
                 </ul>
-
-                <div id = "side_menu">
-
-                    <ul>
-                        <ls>French Fries
-                                <input type="checkbox" onclick="checked">
-                                    <script>
-                                        var x = document.createElement("INPUT");
-                                    </script>    
-                            </ls>
-                            <br>
-                            <ls>Onion Rings
-                                <input type="checkbox" onclick="checked">
-                                    <script>
-                                var x = document.createElement("INPUT");
-                                    </script>            
-                            </ls><br>
-                            <ls>Soup
-                                <input type="checkbox" onclick="checked">
-                                    <script>
-                                        var x = document.createElement("INPUT");
-                                    </script>    
-                                
-                            </ls><br>
-                            <ls>Salad
-                                <input type="checkbox" onclick="checked">
-                                    <script>
-                                        var x = document.createElement("INPUT");
-                                    </script>    
-                                
-                            </ls><br>
-                            <ls>Breadsticks
-                                <input type="checkbox" onclick="checked">
-                                    <script>
-                                        var x = document.createElement("INPUT");
-                                    </script>    
-                            </ls><br>
-                            </ul>
-                        </div>  
-
         </div>
 
         <div class="submit-btn">    
-            <button onclick= "sidesFunction()">Submit</button>
+            <button onclick= "location.href='dinner_lunch_sides.html';">Next for Sides</button>
+        <script>
+                var buttons = document.getElementByClass("button");
+                buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
+            </script>
         </div>
         
     <div class = background-image>
-        <img src="white_devcamp_logo.png" height="100%" width="100%";>
+        <img src="white_devcamp_logo.png" height="500px" width="100%";>
+
+        <div class="footer">
+            <div class="address">
+                123 W 200 N, SLC
+            </div>
+    
+            <div class="phoneNumber">
+                555-555-5555
+            </div>
+    
+            <div class="email">
+                info@bottegadiner.com
+            </div>
+
+
         <div class = "askJarvis">
-            <img src="waiter-512.png" height=70px width=70px <button onclick="getElementById(messageForm);"></button></img>
+            <button id="button" onclick="location.href='contact_form.html';"></button>
+
+                <script type="text/javascript">
+                    var buttons = document.getElementById("button");
+                    buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
+                </script>
             
         </div>
     

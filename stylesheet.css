@@ -1,0 +1,75 @@
+    
+.main_wrapper {
+    padding-left: -10px;
+    padding-right: -10px;
+    padding-top: 50px;
+    margin: -10px;
+    
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: #ECECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links_wrapper {
+    padding-left: -10px;
+    padding-right: -10px;
+    padding-top: 65px;
+    margin: -10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color: #ECECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links_wrapper > p {
+    padding: 20px;
+    margin: 20px;
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.background-image {
+   
+    
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    
+}
+
+.background-image > p{
+   
+    
+    font-family: 'Montserrat', sans-serif;
+    color: #00cb79;
+
+}
+
+.askJarvis > button {
+    height: 60px;
+    width: 60px;
+}
+
+.footer {
+    padding: 20px;
+    margin: 20px;
+    
+    font-family: 'Montserrat', sans-serif;
+    color: #00cb79;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.background-image {
+background-color: #ECECEC;
+}
+

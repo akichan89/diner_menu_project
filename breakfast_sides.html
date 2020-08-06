@@ -3,78 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <title>Bottega Diner and Cafe</title>
 </head>
+<body>
 
-
-<style>
-
-    
-.main_wrapper {
-        padding-left: -10px;
-        padding-right: -10px;
-        padding-top: 50px;
-        margin: -10px;
-        
-        font-family: 'Montserrat', sans-serif;
-        color: black;
-        background-color: #ECECEC;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-.links_wrapper {
-        padding-left: -10px;
-        padding-right: -10px;
-        padding-top: 65px;
-        margin: -10px;
-        border: none;
-        font-family: 'Montserrat', sans-serif;
-        color: teal;
-        background-color: #ECECEC;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-.links_wrapper > p {
-        padding: 20px;
-        margin: 20px;
-        
-        font-family: 'Montserrat', sans-serif;
-        
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-}
-
-.footer {
-        padding: 20px;
-        margin: 20px;
-        
-        font-family: 'Montserrat', sans-serif;
-        color: #00cb79;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-}
-.background-image {
-    background-color: #ECECEC;
-}
-
-
-
-</style>
-
-
-<body> 
-
-    
-
-  
-    
     <div class="main_wrapper">
         
         <h1>Thank you for choosing the Bottega Diner and Cafe!</h1><br>
@@ -86,6 +20,9 @@
         <input type="button" onclick="location.href='breakfast.html';" value="Breakfast" />
         <input type="button" onclick="location.href='lunch.html';" value="Lunch" />
         <input type="button" onclick="location.href='dinner.html';" value="Dinner" />
+        <input type="button" onclick="location.href='index.html';" value="Home" />
+        <input type="button" onclick="location.href='cart.html';" value="Cart" />
+
         
 
         </p>
@@ -93,6 +30,14 @@
 
    
 
+    </div>
+
+    <div class="submit-btn">    
+        <button onclick= "location.href='cart.html';">Continue</button>
+    <script>
+            var buttons = document.getElementByClass("button");
+            buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
+        </script>
     </div>
 
     <div class = background-image>
@@ -127,13 +72,9 @@
 
     
 </body>
+
 <script>
-    var fname = prompt('Hello, my name is Jarivs and I will be your waiter. Could you I please get your first name for your order?', 'Annonymous');
-    fname.alert = alert('Thank you, ' + fname);
-
-
-    
+    var sideMessage = alert('Great choice! Your entree comes with two sides. Please select your sides from the menu below:');
 
 </script>
-
 </html>

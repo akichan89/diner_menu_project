@@ -96,7 +96,7 @@
     </div>
 
     <div class = background-image>
-        <img src="white_devcamp_logo.png" height="100%" width="100%";>
+        <img src="white_devcamp_logo.png" height="500px" width="100%";>
 
         <div class="footer">
             <div class="address">
@@ -112,7 +112,13 @@
             </div>
 
             <div class = "askJarvis">
-                <img src="waiter-512.png" height=70px width=70px>
+                <button id="button" onclick="location.href='contact_form.html';"></button>
+
+                <script type="text/javascript">
+                    var buttons = document.getElementById("button");
+                    buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
+                </script>
+            
                 
             </div>
         </div>
