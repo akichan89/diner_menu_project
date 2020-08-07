@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+        <title>Bottega Diner and Cafe</title>
+    </head>
+<body>
+    <div class="main_wrapper">
+        <h1>'Hello, my name is Jarivs and I will be your waiter. Could you I please get your name and email address for your order?'</h1>
+    </div>
+    
+
+    <div class = background-image>
+        <img src="white_devcamp_logo.png" height="500px" width="100%";>
+
+        <form id="frm1" action="/action_page.php">
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            Email: <input type="text" name="email"><br>
+            <br>
+            <input type="button" onclick="myFunction()" value="Submit">
+          </form>
+
+        <div class="footer">
+            <div class="address">
+                123 W 200 N, SLC
+            </div>
+    
+            <div class="phoneNumber">
+                555-555-5555
+            </div>
+    
+            <div class="email">
+                info@bottegadiner.com
+            </div>
+
+            <div class = "askJarvis">
+                <button id="button" onclick="location.href='contact_form.html';"></button>
+
+                <script type="text/javascript">
+                    var buttons = document.getElementById("button");
+                    buttons.innerHTML = '<img src="waiter-512.png" height=70px width=70px>';
+                </script>
+            
+                
+            </div>
+        
+    </div>
+    </div>  
+</body>
+
+
+</html>

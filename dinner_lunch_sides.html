@@ -7,10 +7,6 @@
     <title>Bottega Diner and Cafe</title>
 </head>
 
-<script>
-    
-</script>
-
 <style>
 
 .main_wrapper {
@@ -52,16 +48,29 @@
     width: 100%
 }
 
+.submit-btn {
+    background-color: #ECECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    padding: 20px;
+    margin: 20px;
+    
+    font-family: 'Montserrat', sans-serif;
+    color: #00cb79;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 </style>
 
 
 <body> 
 
-    
-
-  
-    
-    <div class="main_wrapper">
+<div class="main_wrapper">
         
         <h1>Thank you for choosing the Bottega Diner and Cafe!</h1><br>
     </div>
@@ -117,8 +126,9 @@
             </ls><br>
             </ul>
 
-    </div>
+         
 
+    </div>
 
     <div class="submit-btn">    
         <button onclick= "location.href='cart.html';">Continue</button>
@@ -128,6 +138,9 @@
         </script>
     </div>
 
+
+
+   
     
     <div class = background-image>
         <img src="white_devcamp_logo.png" height="500px" width="100%";>
@@ -157,25 +170,14 @@
             </div>
     </div>
 
-    <script>
-        const dinerArray = [
-        'Hamburger',
-        'Cheeseburger',
-        'Hot dog',
-        'Grilled Cheese',
-        'Tacos'
-];
-        var menuSelection = document.getElementById(menu_selection).innerHTML = 'Welcome';
-        const order = dinerArray;
-        
-    </script>    
+</div>   
    
-
-
 </body>
 
 <script>
+    
     var sideMessage = alert('Great choice! Your entree comes with two sides. Please select your sides from the menu below:');
 
 </script>
+
 </html>

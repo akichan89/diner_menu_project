@@ -1,0 +1,25 @@
+.contact-form-page {
+    padding: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-p {
+    font-family: 'Montserrat', sans-serif;
+    color:#00cb79;
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#frmContact {
+    padding-left: 310px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    
+
+}

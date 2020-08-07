@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="contactForm.css">
     <title>D</title>
+
+    
 </head>
+
+
+
 <body>
+
+   
 
     <div class="main_wrapper">
         
@@ -24,20 +32,38 @@
         <input type="button" onclick="location.href='cart.html';" value="Cart" />
 
         </p>
+        
     </div>
 
-</div>
+    <div class = "contact-form-page">
+        <h2>Have a question? Ask Jarvis and he will respond as soon as he can. If you can't wait, please call us at: 555-555-5555    </h2>
+        
+        <p><img src="waiter-512.png" height=50px width=50px></p>
+    </div>
+    
+    <div class="contact-form-p">
+        <h3>To send Jarvis a message, please fill out the form below and then click "Submit" to submit the form:</h3>
+        <br>
+        <br> 
+    </div> 
+      
+
+        
+    
+        <div class = "contact-form">
+            <form id="frmContact" action="/action_page.php">
+                First name:<input type="text" name="fname"><br>
+                Email:<input type="text" name="email"><br>
+                Message:<input type="text" name="message"><br>
+                <input type="button" onclick="myFunction()" value="Submit">
+                </form>
+        </div>
+
 
 <div class = background-image>
     <img src="white_devcamp_logo.png" height="500px" width="100%";>
 
-    <p>Enter names in the fields, then click "Submit" to submit the form:</p>
-
-        <form id="frm1" action="/action_page.php">
-        First name: <input type="text" name="fname"><br>
-        Last name: <input type="text" name="lname"><br><br>
-        <input type="button" onclick="myFunction()" value="Submit">
-        </form>
+    
 
     <div class="footer">
         <div class="address">

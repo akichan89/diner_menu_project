@@ -1,12 +1,7 @@
-const greeting = ('Welcome to the Bottega Diner! Please select an entree')
-const dinerArray = [
-    'Hamburger',
-    'Cheeseburger',
-    'Hot dog',
-    'Grilled Cheese',
-    'Tacos'
-];
 
+function myFunction() {
+    document.getElementById("frm1").submit();
+  }
 console.log(greeting)
 console.log(dinerArray);
 
@@ -37,3 +32,5 @@ console.log('You ordered ' + (menuChoice) + ' with ' + (sideOne) + ' and ' + (si
 menuInstructions('Hamburger', 'fries', 'salad');
 
 console.log ('Thank you for visitng the Bottega Diner! Please enjoy your order and have a great day!');
+
+var sideMessage = alert('Great choice!' + (fname) + ' Your entree comes with two sides. Please select your sides from the menu below');
